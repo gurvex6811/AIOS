@@ -1,0 +1,148 @@
+AIOS PROPRIETARY SOFTWARE LICENSE
+Version 1.0, May 2026
+
+Copyright (c) 2026 AIOS Maintainers
+All rights reserved.
+
+Maintainers:
+  Hillary NS      <https://github.com/hillaryns>
+  Subhobhai Sarkar <https://github.com/subhobhai943>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DEFINITIONS
+
+"Software" refers to the AIOS (Autonomous Intelligent Operating System)
+source code, object code, binaries, documentation, and all associated
+files and materials contained in this repository.
+
+"Maintainers" refers exclusively to the individuals listed above by name
+and GitHub username.
+
+"Authorized Contributor" means any individual who has received explicit
+written permission from one or more Maintainers to view, modify, or
+contribute to the Software.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. GRANT OF RIGHTS TO MAINTAINERS
+
+The Maintainers are granted full, irrevocable rights to use, copy,
+modify, merge, publish, distribute, sublicense, and sell the Software
+and derivative works, subject to the terms of this License.
+
+2. RESTRICTIONS
+
+All rights not explicitly granted to Maintainers or Authorized
+Contributors are reserved. The following actions are STRICTLY PROHIBITED
+for any person or entity that is not a Maintainer or Authorized
+Contributor:
+
+  a. Copying, reproducing, or cloning any portion of the Software for
+     any purpose, commercial or non-commercial.
+
+  b. Modifying, adapting, translating, or creating derivative works
+     based on the Software.
+
+  c. Distributing, publishing, sublicensing, renting, selling, or
+     otherwise transferring the Software or any portion thereof to any
+     third party.
+
+  d. Reverse engineering, disassembling, decompiling, or otherwise
+     attempting to derive the source code from compiled binaries of the
+     Software, except to the extent that applicable law expressly
+     permits such activity.
+
+  e. Using the Software, its architecture, algorithms, data structures,
+     or any derived knowledge to build competing or substantially similar
+     products.
+
+  f. Removing, obscuring, or altering any proprietary notices, copyright
+     notices, or license terms included in or with the Software.
+
+  g. Using the name "AIOS", the names of the Maintainers, or any
+     associated trademarks to endorse or promote products derived from
+     this Software without prior written consent.
+
+3. AUTHORIZED CONTRIBUTORS
+
+A Maintainer may designate an individual as an Authorized Contributor by
+providing explicit written permission (including via GitHub Pull Request
+approval). Authorized Contributors are granted a limited, non-exclusive,
+non-transferable, revocable right to:
+
+  - View and read the Software;
+  - Submit contributions (code, documentation, fixes) to Maintainers
+    via the official repository's Pull Request mechanism;
+  - Retain copyright in their own contributions, subject to a
+    perpetual, royalty-free license granted to the Maintainers to use
+    those contributions as part of the Software.
+
+  Authorized Contributor status does not grant rights to distribute,
+  sublicense, or use the Software outside of the official repository
+  workflow.
+
+4. CONFIDENTIALITY
+
+The Software contains proprietary and confidential information. All
+persons with access to the Software agree to:
+
+  a. Hold the Software in strict confidence;
+  b. Not disclose any portion of the Software to third parties without
+     prior written consent from the Maintainers;
+  c. Use the Software solely for purposes authorized under this License.
+
+5. INTELLECTUAL PROPERTY
+
+The Software and all intellectual property rights therein are and shall
+remain the exclusive property of the Maintainers. This License does not
+convey any title or ownership interest in the Software to any party
+other than the Maintainers.
+
+Contributions submitted by Authorized Contributors shall automatically
+convey a perpetual, worldwide, royalty-free, irrevocable license to the
+Maintainers to use, reproduce, modify, distribute, and sublicense those
+contributions as part of the Software.
+
+6. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+NON-INFRINGEMENT. THE MAINTAINERS SHALL NOT BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+7. TERMINATION
+
+This License and all rights granted hereunder terminate automatically
+upon any breach of its terms. Upon termination, the breaching party must
+immediately cease all use of the Software and destroy all copies in
+their possession.
+
+8. GOVERNING LAW
+
+This License shall be governed by and construed in accordance with
+applicable intellectual property and contract law. Any disputes arising
+under this License shall be resolved through negotiation between the
+Maintainers in good faith.
+
+9. ENTIRE AGREEMENT
+
+This License constitutes the entire agreement between the parties with
+respect to the subject matter hereof and supersedes all prior or
+contemporaneous communications, representations, or agreements.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For permissions beyond the scope of this license, contact the
+Maintainers via the official GitHub repository:
+https://github.com/hillaryns/AIOS.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Copyright (c) 2026 AIOS Maintainers. All rights reserved.
