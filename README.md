@@ -198,11 +198,12 @@ If you are an authorized maintainer:
 |------|--------|
 | Hillary | [@hillaryns](https://github.com/hillaryns) |
 | Subhobhai | [@subhobhai943](https://github.com/subhobhai943) |
+| Subham | [@SUBHAM646](https://github.com/SUBHAM646) |
 
 ---
 
 ## License
 
-Copyright © 2026 AIOS Maintainers (Hillary NS, Subhobhai Sarkar). All rights reserved.
+Copyright © 2026 AIOS Maintainers (Hillary NS, Subhobhai Sarkar, Subham). All rights reserved.
 
 This software is proprietary and confidential. See [`LICENSE`](./LICENSE) for full terms. Unauthorized use, reproduction, or distribution is strictly prohibited.
