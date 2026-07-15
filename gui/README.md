@@ -1,70 +1,71 @@
-# AIOS GUI — Neuro-Adaptive Shell
+# AIOS GUI — Phase 9 Desktop Dashboard
 
-> *"The interface should feel like an extension of your mind, not a tool you operate."*
+This is the **AIOS Desktop Dashboard** — a pixel-faithful HTML/CSS/JS implementation of the AIOS GUI as defined in the Master Blueprint v3.0 and the design mockup.
 
-The AIOS UI is fundamentally different from every other OS interface:
+## 🖥️ Features Implemented
 
-| Feature | Windows 11 | macOS | GNOME/KDE | **AIOS Shell** |
-|---|---|---|---|---|
-| Dock/Taskbar | Bottom bar | Bottom dock | Top/Bottom bar | **Orbital Arc Dock** |
-| App launcher | Start Menu | Spotlight | App Grid | **Nexus AI Command Bar** |
-| Notifications | Toast popups | Notification Center | Banners | **Context Strips (memory-aware)** |
-| Color theme | Static | Static/Dynamic | Static | **Emotion Aura (EIE-driven)** |
-| Desktop background | Wallpaper | Wallpaper | Wallpaper | **Live Memory Canvas** |
-| Window management | Snap/tiling | Spaces | Workspaces | **Persona Workspaces** |
+| Panel | Description |
+|---|---|
+| **Top Bar** | Live clock, AIOS logo, system icons, AI Core Active badge |
+| **Sidebar** | Navigation: Nexus, Memory, Agents, Projects, Conversations, Files, System, Settings |
+| **Nexus Orb** | Animated AI voice orb with pulsing rings and waveform |
+| **Active Context** | Developer Mode selector, Focus/Environment/Interruptions metadata, Productivity bar (92%) |
+| **System Vitals** | Animated donut chart, CPU/RAM/GPU/Disk/Network bars with sparklines |
+| **Central Hero** | Animated rotating rings with Λ logo, beam glow, greeting text |
+| **Nexus Graph** | Live canvas animation — infinite memory & intelligence graph with nodes, edges, particles |
+| **Active Agents** | Nexus Orchestrator, Async Life Agent, Memory Curator, Code Assistant with live status |
+| **Live Insights** | Productivity & focus insights panel |
+| **Upcoming** | Calendar events with color-coded dots |
+| **Weather** | Current temperature and 4-day forecast |
+| **Media Hub** | Lo-Fi Deep Focus player with animated waveform and controls |
+| **Bottom Dock** | Global search bar + dock icons (Apps, Widgets, Holo Space, Terminal, Quick Access) |
 
-## Architecture
+## 🚀 How to Run
 
-```
-gui/
-├── shell/
-│   ├── aios_shell.py          # Main shell compositor (PyQt6)
-│   ├── emotion_aura.py        # EIE-driven color/theme engine
-│   ├── memory_canvas.py       # Live desktop memory background
-│   └── persona_switcher.py    # Animated persona transition
-├── command_bar/
-│   ├── nexus_bar.py           # Super+Space AI command overlay
-│   ├── suggestion_engine.py   # Real-time AI suggestions
-│   └── voice_indicator.py     # Live waveform when voice active
-├── dock/
-│   ├── orbital_dock.py        # Circular arc app dock
-│   ├── dock_item.py           # Animated dock items
-│   └── dock_config.yaml       # Dock layout + app bindings
-├── hud/
-│   ├── memory_strip.py        # Context strip (top of screen)
-│   ├── system_aura.py         # System stats ambient display
-│   └── notification_nexus.py  # Memory-aware notifications
-├── tray/
-│   └── tray_app.py            # System tray daemon
-├── dashboard/
-│   ├── index.html             # Memory dashboard
-│   ├── style.css              # AIOS design tokens
-│   └── app.js                 # Dashboard logic
-└── themes/
-    ├── neuro_dark.css         # Default dark theme
-    └── emotion_tokens.json    # Emotion → color mappings
-```
-
-## Installation
-
+### Option 1: Open directly
 ```bash
-pip install PyQt6 PyQt6-WebEngine psutil requests
-sudo apt install wmctrl xdotool libappindicator3-1
-
-# Run the shell overlay (does NOT replace your WM)
-python gui/shell/aios_shell.py &
-
-# Run the system tray
-python gui/tray/tray_app.py &
-
-# Open memory dashboard
-xdg-open http://localhost:8080
+cd gui/
+open index.html   # macOS
+xdg-open index.html  # Linux
 ```
 
-## Design Philosophy
+### Option 2: Serve with Python
+```bash
+cd gui/
+python3 -m http.server 8080
+# Open http://localhost:8080
+```
 
-1. **Zero Clutter by Default** — Nothing is visible unless needed. Clean canvas.
-2. **Context-First, Not App-First** — You see what you're *doing*, not a list of apps.
-3. **Emotion-Responsive** — Stressed? UI softens, dims, focuses. Energized? It opens up.
-4. **Memory Everywhere** — Every interface element can recall your past context.
-5. **Voice-Native** — Every action has a voice equivalent. No UI is voice-exclusive either.
+### Option 3: Node.js (if available)
+```bash
+npx serve gui/ -p 8080
+```
+
+## 🎨 Design Language
+
+- **Color Palette:** Deep space dark `#07080f` base with purple (`#7c5fff`), blue (`#3b8bff`), and cyan (`#00d4ff`) accents
+- **Typography:** Inter (UI text) + Orbitron (logo/headers)
+- **Effects:** Glassmorphism panels, animated rings, canvas graph, glow pulses, waveform animations
+- **Layout:** Fixed sidebar + 3-column responsive grid + fixed dock
+
+## 📍 Phase Mapping (Blueprint)
+
+This implements **Phase 9.3** from the AIOS Master Blueprint:
+> *"Build a web-based dashboard served at localhost:8080 that provides a visual interface for browsing and managing AIOS memory."*
+
+Later phases will connect this GUI to:
+- `nexus/` — FastAPI backend (port 11435)
+- `memory/` — SQLite + ChromaDB memory queries
+- `agents/` — Real-time agent status via WebSocket
+- `emotion/` — Live emotion state display
+
+## 🛠️ Tech Stack
+
+- Pure **HTML5 + CSS3 + Vanilla JS** — zero dependencies
+- **Canvas API** for the Nexus Graph animation
+- **CSS animations** for orb, rings, waveforms, particles
+- **Google Fonts** (Inter + Orbitron) via CDN
+
+---
+
+*AIOS GUI — Phase 9 Implementation — Blueprint v3.0*
