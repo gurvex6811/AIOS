@@ -1,0 +1,77 @@
+# AIOS Orbital Dock Configuration
+# Each item: icon, label, cmd, process_name (for running indicator)
+# Use separator: true for a visual divider
+
+items:
+  # ── AIOS Core
+  - icon: "⦿"
+    label: "Nexus"
+    cmd: "nexus chat"
+    process_name: "nexus"
+    persona: all
+
+  - separator: true
+
+  # ── Dev tools (auto-shown in Developer persona)
+  - icon: "💻"
+    label: "Terminal"
+    cmd: "x-terminal-emulator"
+    process_name: "bash"
+    persona: developer
+
+  - icon: "🔵"
+    label: "VS Code"
+    cmd: "code"
+    process_name: "code"
+    persona: developer
+
+  - icon: "🐳"
+    label: "Docker"
+    cmd: "x-terminal-emulator -e docker ps"
+    process_name: "dockerd"
+    persona: developer
+
+  - separator: true
+
+  # ── General
+  - icon: "🌐"
+    label: "Browser"
+    cmd: "xdg-open https://"
+    process_name: "firefox"
+    persona: all
+
+  - icon: "📁"
+    label: "Files"
+    cmd: "nautilus"
+    process_name: "nautilus"
+    persona: all
+
+  - separator: true
+
+  # ── Student persona
+  - icon: "📚"
+    label: "Notes"
+    cmd: "xdg-open ~/Documents/notes"
+    process_name: "obsidian"
+    persona: student
+
+  - icon: "⏱️"
+    label: "Pomodoro"
+    cmd: "gnome-clocks"
+    process_name: "gnome-clocks"
+    persona: student
+
+  - separator: true
+
+  # ── System
+  - icon: "⚙️"
+    label: "Settings"
+    cmd: "gnome-control-center"
+    process_name: "gnome-control-center"
+    persona: all
+
+  - icon: "🔒"
+    label: "Privacy"
+    cmd: "nexus privacy status"
+    process_name: ""
+    persona: all

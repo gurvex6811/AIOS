@@ -1,0 +1,88 @@
+{
+  "emotions": {
+    "focused": {
+      "label": "Focused",
+      "emoji": "🎯",
+      "aura_primary": "#00d4ff",
+      "aura_secondary": "#0077cc",
+      "aura_glow": "rgba(0, 212, 255, 0.15)",
+      "pulse_speed_s": 3.0,
+      "glass_blur_px": 24,
+      "notification_threshold": "normal",
+      "llm_tone_hint": "Be concise and efficient. Minimal pleasantries. Developer is in flow state.",
+      "wallpaper_variant": "deep_blue_nebula"
+    },
+    "stressed": {
+      "label": "Stressed",
+      "emoji": "😰",
+      "aura_primary": "#ff6b6b",
+      "aura_secondary": "#c0392b",
+      "aura_glow": "rgba(255, 107, 107, 0.12)",
+      "pulse_speed_s": 1.5,
+      "glass_blur_px": 32,
+      "notification_threshold": "urgent_only",
+      "llm_tone_hint": "Respond with extra calm and warmth. Keep responses shorter. Offer to help prioritize. Be a grounding presence.",
+      "wallpaper_variant": "calm_aurora"
+    },
+    "energized": {
+      "label": "Energized",
+      "emoji": "⚡",
+      "aura_primary": "#00ff88",
+      "aura_secondary": "#00cc66",
+      "aura_glow": "rgba(0, 255, 136, 0.18)",
+      "pulse_speed_s": 2.0,
+      "glass_blur_px": 20,
+      "notification_threshold": "all",
+      "llm_tone_hint": "Match the user's energy. Be enthusiastic and action-oriented. Suggest bold next steps.",
+      "wallpaper_variant": "electric_green_grid"
+    },
+    "tired": {
+      "label": "Tired",
+      "emoji": "😴",
+      "aura_primary": "#8892a4",
+      "aura_secondary": "#556070",
+      "aura_glow": "rgba(136, 146, 164, 0.08)",
+      "pulse_speed_s": 5.0,
+      "glass_blur_px": 28,
+      "notification_threshold": "urgent_only",
+      "llm_tone_hint": "Be very gentle and supportive. Suggest breaks. Keep tasks small. Ask if they want to wrap up for the day.",
+      "wallpaper_variant": "soft_grey_fog"
+    },
+    "happy": {
+      "label": "Happy",
+      "emoji": "😊",
+      "aura_primary": "#ffd700",
+      "aura_secondary": "#ff9500",
+      "aura_glow": "rgba(255, 215, 0, 0.14)",
+      "pulse_speed_s": 2.5,
+      "glass_blur_px": 20,
+      "notification_threshold": "all",
+      "llm_tone_hint": "Be warm and conversational. Celebrate progress. This is a good time to tackle creative or hard problems.",
+      "wallpaper_variant": "golden_sunrise"
+    },
+    "frustrated": {
+      "label": "Frustrated",
+      "emoji": "😤",
+      "aura_primary": "#ff8c00",
+      "aura_secondary": "#cc4400",
+      "aura_glow": "rgba(255, 140, 0, 0.12)",
+      "pulse_speed_s": 1.8,
+      "glass_blur_px": 28,
+      "notification_threshold": "urgent_only",
+      "llm_tone_hint": "Be patient and empathetic. Acknowledge the difficulty. Break problems into smaller steps. Avoid overwhelming with information.",
+      "wallpaper_variant": "warm_ember"
+    },
+    "neutral": {
+      "label": "Neutral",
+      "emoji": "😐",
+      "aura_primary": "#7c3aed",
+      "aura_secondary": "#5b21b6",
+      "aura_glow": "rgba(124, 58, 237, 0.12)",
+      "pulse_speed_s": 4.0,
+      "glass_blur_px": 24,
+      "notification_threshold": "normal",
+      "llm_tone_hint": "Be balanced and professional. Standard helpful mode.",
+      "wallpaper_variant": "violet_cosmos"
+    }
+  }
+}

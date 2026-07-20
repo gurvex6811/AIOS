@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-emotion="focused">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIOS — Memory Dashboard</title>
+  <link rel="stylesheet" href="../themes/neuro_dark.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Auto-reload live emotion CSS -->
+  <link id="aura-live" rel="stylesheet" href="../themes/aura_live.css">
+  <style>
+    /* Live CSS reload every 5s for emotion aura */
+    body { margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ── TOP NAV ─────────────────────────────────────────── -->
+  <nav class="topnav glass">
+    <span class="nav-logo">⦿ AIOS</span>
+    <div class="nav-links">
+      <a href="#memories"  class="nav-link active">Memories</a>
+      <a href="#goals"     class="nav-link">Goals</a>
+      <a href="#projects"  class="nav-link">Projects</a>
+      <a href="#decisions" class="nav-link">Decisions</a>
+      <a href="#files"     class="nav-link">Files</a>
+      <a href="#privacy"   class="nav-link">Privacy</a>
+    </div>
+    <div class="nav-right">
+      <div class="aura-pill" id="auraPill">
+        <span class="aura-dot"></span>
+        <span id="emotionLabel">🎯 Focused</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO STATS ──────────────────────────────────────── -->
+  <section class="stats-row">
+    <div class="stat-card glass aura-active">
+      <div class="stat-value" id="memCount">0</div>
+      <div class="stat-label">Total Memories</div>
+    </div>
+    <div class="stat-card glass">
+      <div class="stat-value" id="goalCount">0</div>
+      <div class="stat-label">Active Goals</div>
+    </div>
+    <div class="stat-card glass">
+      <div class="stat-value" id="projectCount">0</div>
+      <div class="stat-label">Live Projects</div>
+    </div>
+    <div class="stat-card glass">
+      <div class="stat-value" id="decisionCount">0</div>
+      <div class="stat-label">Decision Forks</div>
+    </div>
+  </section>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────── -->
+  <main class="content-grid">
+
+    <!-- Memory Search -->
+    <section class="card glass" id="memories">
+      <h2 class="card-title">💾  Memory Search</h2>
+      <div class="search-row">
+        <input
+          type="text"
+          id="memSearch"
+          class="search-input"
+          placeholder="Search your memories semantically…"
+          autocomplete="off"
+        >
+        <button class="search-btn" onclick="searchMemory()">Search</button>
+      </div>
+      <div id="memResults" class="mem-list"></div>
+    </section>
+
+    <!-- Goals -->
+    <section class="card glass" id="goals">
+      <h2 class="card-title">🎯  Active Goals</h2>
+      <div id="goalsList" class="item-list"></div>
+      <div class="add-row">
+        <input type="text" id="goalInput" class="search-input" placeholder="New goal…">
+        <button class="add-btn" onclick="addGoal()">+ Add</button>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="card glass full-width" id="timeline">
+      <h2 class="card-title">📅  Memory Timeline</h2>
+      <div id="timeline-container" class="timeline"></div>
+    </section>
+
+    <!-- Decision Forks -->
+    <section class="card glass" id="decisions">
+      <h2 class="card-title">✶  Decision Forks</h2>
+      <div id="decisionsList" class="item-list"></div>
+    </section>
+
+    <!-- Privacy Panel -->
+    <section class="card glass" id="privacy">
+      <h2 class="card-title">🔒  Privacy Status</h2>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <span class="privacy-check ok">✓</span>
+          <span>100% local processing — no data leaves device</span>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-check ok">✓</span>
+          <span>Memory encrypted at rest (AES)</span>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-check ok">✓</span>
+          <span>Zero telemetry</span>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-check ok">✓</span>
+          <span>Camera: <span id="cameraStatus">Off</span></span>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn-outline" onclick="exportData()">Export My Data</button>
+        <button class="btn-outline btn-danger" onclick="eraseData()">Request Erasure</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
